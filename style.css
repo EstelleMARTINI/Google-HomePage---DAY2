@@ -1,0 +1,278 @@
+html 
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#navbar 
+{
+    right: 0px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "Gmail" "Images" "Menu" "Sign-in";
+    margin: 0 20px 0 10px;
+}
+
+a 
+{
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+a:hover 
+{
+    text-decoration: underline
+}
+
+
+
+
+#Gmail
+{
+    grid-area: Gmail;
+    justify-self: center;
+    align-self: center;
+    margin-right:15px;
+    margin-top: 0px;
+    border-radius: 50%;
+    max-width:35px;
+    float: right;
+    cursor: pointer;
+}
+
+#Images 
+{
+    grid-area: Images;
+    justify-self: center;
+    align-self: center;
+    margin-right: 10px
+}
+
+#Menu 
+{
+    grid-area: Menu;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+    float: right;
+    width: 30px; 
+    margin-top: 20px;
+    margin-right:19px
+}
+
+#Sign-in
+{
+    grid-area: Sign-in;
+    justify-self: center;
+    align-self: center;
+    height: 25px;
+    width: 90px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    border-radius: 3px;
+    background-color: #4683ea;
+    color: white;
+}
+
+
+
+#main 
+{
+    font-family: arial;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: "logo" "search" "flexbox" "translation";
+}
+
+
+#logo 
+{
+    grid-area: logo;
+    justify-self: center;
+    align-self: end
+}
+
+
+
+#search
+{
+    grid-area: barre;
+    height: 37px;
+    width: 120%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px
+}
+
+#search:hover 
+{
+    box-shadow: 1px 1px 5px grey
+}
+
+
+
+#flexbox 
+{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center
+    margin-top:25px;
+}
+
+
+
+#google-search-button
+{
+    border: none;
+    height:2.5em;
+    font-size: 15px;
+    color: #5F6368;
+    margin-right: 10px;
+    padding: 8px 15px 8px 15px;
+    border-radius: 3px
+}
+
+#google-search-button:hover 
+{
+    border: 1px solid rgba(0, 0, 0, 0.226)
+}
+
+#lucky-button
+{
+    border: none;
+    height:2.5em;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 8px 15px 7-8px 15px;
+    border-radius: 3px
+}
+
+#lucky-button:hover 
+{
+    border: 1px solid rgba(0, 0, 0, 0.226)
+}
+
+
+
+#translation
+{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 13px;
+    grid-area: version;
+    justify-self: center;
+    margin: auto
+}
+
+
+
+#Francais 
+{
+    color: blue;
+}
+
+
+
+#France 
+{
+    grid-area: France;
+    color: rgba (0, 0, 0, 0.54);
+    font-size:14px;
+}
+
+
+
+#footerA
+{
+    border-top:solid 1px;
+    border-color: #DCDCDC;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    bottom: 40px;
+    line-height: 40px;
+    padding-left: 25px
+    background-color: #f2f2f2;
+    color: #5f6368; 
+}
+
+
+
+#footerB
+{
+    border-top: solid 1px;
+    border-color: #DCDCDC;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #6f6f6f;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 7% 7% 6% 25% 15% 10% 10% 10%;
+    grid-template-rows: 40px;
+    grid-template-areas: "Advertising" "Business" "About" "How Search Works" "Consumer Information" "Privacy" "Terms" "Settings"
+}
+
+
+#Advertising
+{
+    grid-area:Advertising
+}
+
+#Business
+{
+    grid-area:Business
+}
+
+#About
+{
+    grid-area:About
+}
+
+#HowSearchWorks
+{
+    grid-area:HowSearchWorks
+}
+
+#ConsumerInformation
+{
+    grid-area:ConsumerInformation
+}
+
+
+#Privacy
+{
+    grid-area:Privacy
+}
+
+
+#Terms
+{
+    grid-area:Terms
+}
+
+
+#Settings
+{
+    grid-area:Settings
+}
